@@ -1,4 +1,4 @@
-import Root from "./components"
+import Root from "./pages"
 
 const bcisTheme = {
   name: "bcis_theme",

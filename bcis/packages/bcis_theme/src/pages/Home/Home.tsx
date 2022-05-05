@@ -1,16 +1,20 @@
 import React from "react"
 import { connect } from "frontity"
+import { Hero } from "../../components/Hero";
 
-const Root = ({ state }) => {
+const Home = ({ state }) => {
   const data = state.source.get("/");
   const page = state.source.page[data.id]
   console.log({ page })
   return (
     <>
       <h1>Frontity Workshop</h1>
-      <p>Current URL: {state.router.link}</p>
+      {/* <p>Current URL: {state.router.link}</p> */}
+
+      <p>New component</p>
+      <Hero />
     </>
   )
 }
 
-export default connect(Root)
+export default connect(Home)
