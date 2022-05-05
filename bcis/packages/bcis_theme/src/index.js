@@ -1,21 +1,16 @@
-const Root = () => {
-  return (
-    <>
-      You can edit your package in:
-      <pre>packages/bcis_theme/src/index.js</pre>
-    </>
-  );
-};
+import Root from "./components"
 
-export default {
+const bcisTheme = {
   name: "bcis_theme",
   roots: {
-    theme: Root
+    theme: Root,
   },
   state: {
-    theme: {}
+    theme: {},
   },
   actions: {
-    theme: {}
-  }
-};
+    theme: {},
+  },
+}
+
+export default bcisTheme
